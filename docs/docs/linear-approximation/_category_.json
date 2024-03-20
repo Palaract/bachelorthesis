@@ -1,0 +1,11 @@
+{
+  "position": 6.5,
+  "label": "Linear Approximation",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Linear Approximation Overview"
+  }
+}

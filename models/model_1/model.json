@@ -1,0 +1,101 @@
+{
+    "metabolites": [
+        {
+            "id": "Glu",
+            "name": "Glucose",
+            "compartment": ""
+        },
+        {
+            "id": "CO2",
+            "name": "CO2",
+            "compartment": ""
+        },
+        {
+            "id": "ATP",
+            "name": "Adenosine Tri-Phosphate",
+            "compartment": ""
+        },
+        {
+            "id": "Pre",
+            "name": "Precursor",
+            "compartment": ""
+        },
+        {
+            "id": "Bio",
+            "name": "Biomass",
+            "compartment": ""
+        }
+    ],
+    "reactions": [
+        {
+            "id": "R1",
+            "name": "Glucose Uptake",
+            "metabolites": {
+                "Glu": 1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R2",
+            "name": "Glucose to ATP producing CO2",
+            "metabolites": {
+                "ATP": 1.0,
+                "CO2": 1.0,
+                "Glu": -1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R3",
+            "name": "Glucose to Precursor",
+            "metabolites": {
+                "Glu": -1.0,
+                "Pre": 1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R4",
+            "name": "ATP to Biomass",
+            "metabolites": {
+                "ATP": -1.0,
+                "Bio": 1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R5",
+            "name": "Precursor to Biomass",
+            "metabolites": {
+                "Bio": 1.0,
+                "Pre": -1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R6",
+            "name": "Biomass Product",
+            "metabolites": {
+                "Bio": -1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": "",
+            "objective_coefficient": 1.0
+        }
+    ],
+    "genes": [],
+    "id": "Toy Model 1",
+    "compartments": {},
+    "version": "1"
+}

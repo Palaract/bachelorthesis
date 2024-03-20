@@ -1,0 +1,11 @@
+{
+  "position": 4.5,
+  "label": "Flux Balance Analysis",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Flux Balance Analysis Overview"
+  }
+}

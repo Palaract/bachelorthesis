@@ -1,0 +1,77 @@
+---
+title: "Introduction"
+sidebar_label: "Introduction"
+sidebar_position: 2
+---
+
+import ThemedImage from "@theme/ThemedImage";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+
+# Introduction
+
+Bioreactors, as vital components in modern biotechnology, encapsulate the
+dynamic interplay between engineering and biology. Their design and operation
+are central to optimizing microbial processes, which are foundational to
+numerous industrial and pharmaceutical applications. Let's explore the
+significance of bioreactors and the challenges they encounter, particularly
+focusing on bacterial crowding and its impact on process efficiency.
+
+## The Relevance of Bioreactors in Microbial Processes
+
+Bioreactors, specialized vessels for conducting biological reactions, are
+integral to various industries, especially in biotechnology and pharmaceuticals.
+Their primary role is to provide a controlled environment for the effective
+growth and maintenance of microorganisms, facilitating the production of
+bio-products. Bioreactors are designed to regulate parameters such as
+temperature, pH, oxygen levels, and nutrient supply, ensuring optimal conditions
+for microbial activities. The versatility and control offered by bioreactors
+make them indispensable for applications ranging from waste treatment to the
+production of pharmaceuticals, biofuels, and other bio-based products.
+<figure>
+<ThemedImage
+  alt="Bioreactor example"
+  sources={{
+    light: useBaseUrl('/img/introduction/Bioreactor.svg'),
+    dark: useBaseUrl('/img/introduction/Bioreactor_dark.svg'),
+  }}
+/>
+<figcaption>An Example Bioreactor, Source: <a target="_blank" href="https://en.m.wikipedia.org/wiki/File:Bioreactor_principle.svg">Wikimedia Commons</a></figcaption>
+</figure> 
+
+## The Challenge of Bacterial Crowding in Bioreactors
+
+A critical issue in the operation of bioreactors is the phenomenon of bacterial
+crowding. As microorganisms proliferate, they tend to aggregate, leading to high
+cell densities. This crowding can significantly impede their effectiveness in
+two primary ways:
+
+1. **Reduced Nutrient Uptake**: High cell densities in bioreactors result in reduced
+   surface area relative to the volume occupied by the bacteria. This leads to
+   limited exposure of individual cells to the medium, constraining their
+   ability to uptake essential nutrients effectively. Nutrient uptake is a vital
+   process for microbial growth and product formation, and its limitation can
+   severely impact the overall efficiency of the bioreactor.
+
+2. **Impaired Growth and Product Output**: Bacterial crowding not only affects the
+   growth rate of the microorganisms but also their productivity. In industrial
+   processes where the goal is to maximize the yield of a specific product, such
+   as a therapeutic protein or a biochemical, the aggregation and resulting
+   limited nutrient access can lead to suboptimal production levels.
+
+## Addressing the Challenge: Estimating Nutrient Uptake Rates
+
+To mitigate the effects of bacterial crowding, it is essential to understand and
+model the nutrient uptake process accurately. One key approach is the use of the
+Michaelis-Menten equation, a well-established model in enzyme kinetics. This
+model describes the rate of enzymatic reactions by relating the reaction rate to
+the concentration of a substrate (in this case, the nutrient). By applying the
+Michaelis-Menten framework, we can estimate the rate at which nutrients are
+absorbed by the cells under varying conditions of crowding and substrate
+concentration.
+
+However, the Michaelis-Menten equation alone does not account for all the
+complexities of microbial metabolism in crowded environments. Additional
+factors, such as the actual surface area of the cells available for nutrient
+uptake, must also be considered. This includes understanding the changes in cell
+morphology and the proportion of the cell membrane in contact with the medium,
+which can significantly influence uptake rates.

@@ -1,0 +1,10 @@
+python-libsbml
+cobra
+gurobipy
+bokeh
+numpy
+pwlf
+bayesian-optimization
+ipython
+seaborn
+matplotlib

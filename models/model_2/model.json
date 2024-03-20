@@ -1,0 +1,145 @@
+{
+    "metabolites": [
+        {
+            "id": "Sub",
+            "name": "Substrate",
+            "compartment": ""
+        },
+        {
+            "id": "Int",
+            "name": "Intermediate",
+            "compartment": ""
+        },
+        {
+            "id": "CO2",
+            "name": "CO2",
+            "compartment": ""
+        },
+        {
+            "id": "ATP",
+            "name": "Adenosine Tri-Phosphate",
+            "compartment": ""
+        },
+        {
+            "id": "Pre",
+            "name": "Precursor",
+            "compartment": ""
+        },
+        {
+            "id": "Bio",
+            "name": "Biomass",
+            "compartment": ""
+        },
+        {
+            "id": "By",
+            "name": "Byproduct",
+            "compartment": ""
+        }
+    ],
+    "reactions": [
+        {
+            "id": "R1",
+            "name": "Substrate Uptake",
+            "metabolites": {
+                "Sub": 1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R2",
+            "name": "Substrate to Intermediate producing CO2",
+            "metabolites": {
+                "Sub": -1.0,
+                "CO2": 1.0,
+                "Int": 1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R3",
+            "name": "Intermediate to Byproduct producing ATP",
+            "metabolites": {
+                "Int": -1.0,
+                "ATP": 1.0,
+                "By": 1.0
+            },
+            "lower_bound": -1000,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R4",
+            "name": "Intermediate to ATP producing CO2",
+            "metabolites": {
+                "Int": -1.0,
+                "CO2": 1.0,
+                "ATP": 2.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R5",
+            "name": "Intermediate to Precursor",
+            "metabolites": {
+                "Int": -1.0,
+                "Pre": 1.0
+            },
+            "lower_bound": -1000,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R6",
+            "name": "Biomass Product",
+            "metabolites": {
+                "Pre": -1.0,
+                "ATP": -1.0,
+                "Bio": 1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R7",
+            "name": "Biomass Objective",
+            "metabolites": {
+                "Bio": -1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": "",
+            "objective_coefficient": 1.0
+        },
+        {
+            "id": "R8",
+            "name": "CO2 output",
+            "metabolites": {
+                "CO2": -1.0
+            },
+            "lower_bound": 0,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        },
+        {
+            "id": "R9",
+            "name": "Byproduct output",
+            "metabolites": {
+                "By": -1.0
+            },
+            "lower_bound": -1000,
+            "upper_bound": 1000,
+            "gene_reaction_rule": ""
+        }
+    ],
+    "genes": [],
+    "id": "Toy Model 1",
+    "compartments": {},
+    "version": "1"
+}

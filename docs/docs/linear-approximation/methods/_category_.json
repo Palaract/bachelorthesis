@@ -1,0 +1,11 @@
+{
+  "position": 7.5,
+  "label": "Methods",
+  "collapsible": true,
+  "collapsed": true,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Linear Approximation Methods Overview"
+  }
+}
