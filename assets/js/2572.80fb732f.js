@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbachelor_docs=self.webpackChunkbachelor_docs||[]).push([[2572],{2572:(c,e,s)=>{s.r(e)}}]);
